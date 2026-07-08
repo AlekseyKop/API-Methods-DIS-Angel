@@ -1,0 +1,25 @@
+meta {
+  name: Получение списка обращений
+  type: http
+  seq: 27
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/appeals/list
+  body: none
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer e6f8e525-ca1c-4450-ac06-39932c3fa194
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+  cityId: 000000007
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

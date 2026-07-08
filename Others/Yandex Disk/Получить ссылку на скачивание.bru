@@ -1,0 +1,24 @@
+meta {
+  name: Получить ссылку на скачивание
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F1534_1.mp4
+  body: none
+  auth: inherit
+}
+
+params:query {
+  path: disk%3A%2F1534_1.mp4
+  ~: 
+}
+
+headers {
+  Authorization: OAuth y0__xDZj9rhBRjblgMgjqvoghQw6qax_Adh31nTGRnTsbO7_YGHdwRoIiLgRg
+}
+
+settings {
+  encodeUrl: true
+}

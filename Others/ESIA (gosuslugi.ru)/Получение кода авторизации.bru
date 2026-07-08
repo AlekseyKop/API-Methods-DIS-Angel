@@ -1,0 +1,15 @@
+meta {
+  name: Получение кода авторизации
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://esia-portal1.test.gosuslugi.ru/aas/oauth2/ac
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

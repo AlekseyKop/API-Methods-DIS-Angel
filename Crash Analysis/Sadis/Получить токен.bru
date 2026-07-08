@@ -1,0 +1,27 @@
+meta {
+  name: Получить токен
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://sadis.its62.ru/HttpHandlers/GetToken.ashx?userName=Sadis&password=sBWb8dcT7yorPYcrHiwE
+  body: text
+  auth: none
+}
+
+params:query {
+  userName: Sadis
+  password: sBWb8dcT7yorPYcrHiwE
+}
+
+body:text {
+  {
+      "login":"angelit",
+      "password":"a1B6d7cf62D$7b4"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

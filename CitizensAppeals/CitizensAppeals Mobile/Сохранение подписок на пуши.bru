@@ -1,0 +1,47 @@
+meta {
+  name: Сохранение подписок на пуши
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/notifications
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer c1154a83-25ed-4153-88ad-ecd25b8b9f33
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+body:json {
+  {
+    "notifications": [
+      {
+        "event": "Смена статуса",
+        "active": false
+      },
+      {
+        "event": "Предложение отправить жалобу в ГЖИ",
+        "active": false
+      },
+      {
+        "event": "Предложение дать обратную связь",
+        "active": true
+      },
+      {
+        "event": "Новая доступная акция",
+        "active": true
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,37 @@
+meta {
+  name: Авторизация
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api-uat.integration.go.ug/token
+  body: formUrlEncoded
+  auth: oauth2
+}
+
+auth:oauth2 {
+  grant_type: client_credentials
+  access_token_url: 
+  refresh_token_url: 
+  client_id: 
+  client_secret: 
+  scope: 
+  credentials_placement: basic_auth_header
+  credentials_id: 
+  token_placement: header
+  token_header_prefix: 
+  auto_fetch_token: true
+  auto_refresh_token: false
+}
+
+body:form-urlencoded {
+  grant_type: SMSCustomOauth
+  email: a.zabolotnyi@itms-ug.com
+  username: 834319160699523567
+  password: ZMGa7WJyUTfYhBeBryyM
+}
+
+settings {
+  encodeUrl: true
+}

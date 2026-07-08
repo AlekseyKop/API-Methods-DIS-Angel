@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "API Methods DIS",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

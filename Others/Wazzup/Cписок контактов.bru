@@ -1,0 +1,27 @@
+meta {
+  name: Cписок контактов
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.wazzup24.com/v3/contacts
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: Bearer 9a1e9ea10b7b48a2a60068b5f0503582
+}
+
+body:form-urlencoded {
+  channelId: 9e463b59-5074-4652-9324-9e333e54e9d0
+  chatType: telegram
+  ~chatId: 79304012945
+  ~text: test
+  ~phone: 89304012945
+}
+
+settings {
+  encodeUrl: true
+}

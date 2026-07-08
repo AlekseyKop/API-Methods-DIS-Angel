@@ -1,0 +1,26 @@
+meta {
+  name: Нарушения
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://10.0.11.50/PMDAPI/hs/api/commands/violations/3f8908a7-86fa-450d-8889-5d49077e06cd?startDate=1763499600&endDate=1763723223&actual=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  startDate: 1763499600
+  endDate: 1763723223
+  actual: true
+}
+
+headers {
+  api-key: a73f2f0e-d7fe-441d-8d4e-b3cdd984d34a
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

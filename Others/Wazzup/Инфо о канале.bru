@@ -1,0 +1,20 @@
+meta {
+  name: Инфо о канале
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.wazzup24.com/v3/channels
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 9a1e9ea10b7b48a2a60068b5f0503582
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Загрузка файлов
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api-admin.testmoydom.ru/v1/integration/problem-journal-org/upload-file
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

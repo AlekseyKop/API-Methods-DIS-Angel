@@ -1,0 +1,25 @@
+meta {
+  name: Получить Россию
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://osm-boundaries.com/api/v1/databases/osm20240401/tree?rootBoundaryId=-60189&maxDepth=50&relationsView=all
+  body: text
+  auth: none
+}
+
+params:query {
+  rootBoundaryId: -60189
+  maxDepth: 50
+  relationsView: all
+}
+
+body:text {
+  rootBoundaryId=-60189&maxDepth=50&relationsView=all
+}
+
+settings {
+  encodeUrl: true
+}

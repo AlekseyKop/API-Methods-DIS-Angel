@@ -1,0 +1,28 @@
+meta {
+  name: Получение списка документов
+  type: http
+  seq: 24
+}
+
+get {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/getStatuses?idStatus=000000001
+  body: json
+  auth: inherit
+}
+
+params:query {
+  idStatus: 000000001
+}
+
+headers {
+  authorization: Bearer d9ea6027-9f07-4504-a05b-812de8d23b73
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

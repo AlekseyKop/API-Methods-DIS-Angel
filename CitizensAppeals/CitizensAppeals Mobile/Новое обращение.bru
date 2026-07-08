@@ -1,0 +1,38 @@
+meta {
+  name: Новое обращение
+  type: http
+  seq: 16
+}
+
+post {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/appealsNew/new
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 3419800d-2246-45db-bdc1-5c7c467771b5
+  Content-Type: multipart/form-data
+  Accept: application/json
+  ~mobileapp: true
+  ~devicetype: android
+  ~versionnumber: 1.0.1
+  ~appname: CitizensAppeals
+  ~cityId: 000000011
+}
+
+body:multipart-form {
+  file1: @file(/C:/Users/user/Downloads/Безымянный.png)
+  fullname: Лысенко Юлия Александровна
+  phone: 89109677807
+  address: Ярославская область, поселок Красный бор, Мирная, д 12
+  violation_id: 000000342
+  description: На протяжении месяца, (живу в квартире только с сентября), горячая вода не высокой температуры, напор слабый, цвет воды похож на колу. Управляющая компания не предпринимает никаких мер. Счёта за воду, в связи с низкой температурой горячей воды, огромные
+  ~residentialAddress: Ярославская область, поселок Красный бор, Мирная, д 12
+  ~flat: 8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

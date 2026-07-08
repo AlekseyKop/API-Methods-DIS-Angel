@@ -1,0 +1,22 @@
+meta {
+  name: Обращение Зарегистрировано
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://api-admin.testmoydom.ru/v1/integration/problem-journal-org/24912/in-work
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

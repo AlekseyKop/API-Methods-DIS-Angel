@@ -1,0 +1,28 @@
+meta {
+  name: Получение подробной информации о жалобе
+  type: http
+  seq: 35
+}
+
+get {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/appeals/info?idAppeal=1012
+  body: json
+  auth: inherit
+}
+
+params:query {
+  idAppeal: 1012
+}
+
+headers {
+  authorization: Bearer d9ea6027-9f07-4504-a05b-812de8d23b73
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

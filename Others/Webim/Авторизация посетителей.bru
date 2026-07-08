@@ -1,0 +1,39 @@
+meta {
+  name: Авторизация посетителей
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://c1eds76ru.webim.ru/api/v2/rt/provide_visitor_fields
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:basic {
+  username: shevchenkovv@angelsit.ru
+  password: 123QWEasd
+}
+
+body:json {
+  {                  
+      "auth_token": "169f97d0d08c46d2ab1082a1dddac587",
+      "visitor_fields": {
+          "id": "290445",
+          "display_name": "Алексей Копытин",
+          "email": "kopytin_aleksei@mail.ru",
+          "phone": "+79304012945"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

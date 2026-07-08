@@ -1,0 +1,24 @@
+meta {
+  name: Whoosh Треки координаты
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://mds.angelsit.ru/trips?end_time=2026-04-15T14
+  body: none
+  auth: inherit
+}
+
+params:query {
+  end_time: 2026-04-15T14
+}
+
+headers {
+  x-api-key: BKr6tBiAkt9J3JPmVHYgL1NNByzIX6hH3x8kfuAY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Получение кода СМС без токена
+  type: http
+  seq: 22
+}
+
+get {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/complaints/code/?phone=89304012945&isReply=true
+  body: json
+  auth: inherit
+}
+
+params:query {
+  phone: 89304012945
+  isReply: true
+}
+
+headers {
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+  ~authorization: Bearer 216ea715-bf71-4e7f-bf96-c8d4985563c6
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

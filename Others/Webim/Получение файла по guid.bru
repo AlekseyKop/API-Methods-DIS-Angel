@@ -1,0 +1,27 @@
+meta {
+  name: Получение файла по guid
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://c1eds76ru.webim.ru/api/v4/file?guid=20260423_6df634e974964d9ebbd543e3cdb4a8b8
+  body: none
+  auth: basic
+}
+
+params:query {
+  guid: 20260423_6df634e974964d9ebbd543e3cdb4a8b8
+}
+
+auth:basic {
+  username: shevchenkovv@angelsit.ru
+  password: 123QWEasd
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

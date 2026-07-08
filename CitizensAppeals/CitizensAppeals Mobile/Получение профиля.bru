@@ -1,0 +1,24 @@
+meta {
+  name: Получение профиля
+  type: http
+  seq: 23
+}
+
+get {
+  url: https://c1.eds76.ru/CitizensAppealsAPITest/hs/mobile/profile
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 42ab6c9b-6620-4739-b281-ae4d1e379e61
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

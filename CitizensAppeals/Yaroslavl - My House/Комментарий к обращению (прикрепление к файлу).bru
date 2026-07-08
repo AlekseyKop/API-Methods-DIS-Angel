@@ -1,0 +1,39 @@
+meta {
+  name: Комментарий к обращению (прикрепление к файлу)
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api-admin.testmoydom.ru/v1/integration/problem-journal-org/24912/comment
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+body:json {
+  {
+      "text": "test",
+      "isSystem": true,
+      "files": [
+          {
+              "link": "/storage/pj/zwhjagv3/1748342042.png",
+              "name": "Frame 44 (1).png",
+              "size": 52045,
+              "type": "image/png",
+              "ext": "png",
+              "md5": "2aa63d21b2440350ded7f7aa1c30fc1c"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

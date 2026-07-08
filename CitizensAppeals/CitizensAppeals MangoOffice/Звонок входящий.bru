@@ -1,0 +1,29 @@
+meta {
+  name: Звонок входящий
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://178.57.127.226/CitizensAppealsAPI/hs/mango/events/call
+  body: json
+  auth: inherit
+}
+
+headers {
+  ~api-key: 7d03ff89-dd8a-467d-97ff-0264d1af04df
+}
+
+body:json {
+  {
+      "fullname": "Иванов Иван Иванович",
+      "phoneNumber": "84852505050",
+      "incidentAddress": "Ярославская обл, Первомайский р-н, п. ж/д ст. Скалино, поселок Лесоучастка, д 29",
+      "appealTypeId": "00000286"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

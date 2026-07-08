@@ -1,0 +1,24 @@
+meta {
+  name: Получение подписок на пуши
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/notifications
+  body: none
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer c1154a83-25ed-4153-88ad-ecd25b8b9f33
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

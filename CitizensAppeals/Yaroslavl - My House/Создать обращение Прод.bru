@@ -1,0 +1,36 @@
+meta {
+  name: Создать обращение Прод
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api-admin.moydom-yaroslavl.ru/v1/integration/problem-journal-org
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: 41c1e59f1b51cc5b55ff5ce6fc94aeb4
+  placement: header
+}
+
+body:json {
+  {
+      "source": "phone",
+      "description": "Топит сверху. Неоднократно обращался  в УК, что то делали, но топит до сих пор.  Просит разобраться, выявить и устранить причину периодических подтоплений с верхнего этажа.",
+      "userFio": "Дыбцын Валерий Владиславович",
+      "userPhone": "9106653922",
+      "houseFiasId": "024c8034-f43f-4530-93cd-be8aaa8aa8a0",
+      "group": "802569e1-003a-4f2b-b158-70a9b24cec4c",
+      "type": "025ca23d-2372-496f-9316-77104c30cfb1",
+      "emergency": false,
+      "system": "rso",
+      "executor": "1"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

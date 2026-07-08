@@ -1,0 +1,44 @@
+meta {
+  name: Отправка сообщений
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api-uat.integration.go.ug/t/nita.go.ug/sms-gateway/1.0.0/sms/
+  body: json
+  auth: oauth2
+}
+
+headers {
+  sms-verifier: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzcsInVzZXJuYW1lIjoiYS56YWJvbG90bnlpQGl0bXMtdWcuY29tIiwiZXhwIjoxNzIwMTE1MDI0LCJlbWFpbCI6ImEuemFib2xvdG55aUBpdG1zLXVnLmNvbSIsIm9yaWdfaWF0IjoxNzE5NDIzODI0fQ.DIeocdUG-0vncw3m99A-8Vf1-hvmtQI3WKPp8SOTtQk
+}
+
+auth:oauth2 {
+  grant_type: client_credentials
+  access_token_url: 
+  refresh_token_url: 
+  client_id: 
+  client_secret: 
+  scope: 
+  credentials_placement: basic_auth_header
+  credentials_id: credentials
+  token_source: access_token
+  token_placement: header
+  token_header_prefix: 
+  auto_fetch_token: true
+  auto_refresh_token: false
+}
+
+body:json {
+  {
+  "sender": "6120",
+  "receiver": "256776737126",
+  "text": "test"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

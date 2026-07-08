@@ -1,0 +1,28 @@
+meta {
+  name: Получение подробной информации об обращении
+  type: http
+  seq: 14
+}
+
+get {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/appeals/info?idAppeal=15238
+  body: json
+  auth: inherit
+}
+
+params:query {
+  idAppeal: 15238
+}
+
+headers {
+  authorization: Bearer 43bab7f4-d773-48d0-9f3f-24dbf0261ff6
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.6.7
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

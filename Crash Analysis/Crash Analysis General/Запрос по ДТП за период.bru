@@ -1,0 +1,25 @@
+meta {
+  name: Запрос по ДТП за период
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://172.16.31.12:6677/CrashAnalysisAPI/hs/api/v1/commands/road-accidents/list?date_from=2023-12-06&date_to=2023-12-06
+  body: none
+  auth: inherit
+}
+
+params:query {
+  date_from: 2023-12-06
+  date_to: 2023-12-06
+  ~api-key: 9eafb069-e6bb-4427-8c29-9b68b3db67a8
+}
+
+headers {
+  api-key: a06710ba-b703-4459-a9af-c54e55736a09
+}
+
+settings {
+  encodeUrl: true
+}

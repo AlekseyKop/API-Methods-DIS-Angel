@@ -1,0 +1,28 @@
+meta {
+  name: Отменить штраф по жалобе
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://10.101.40.21:8080/FIS/hs/api/commands/cancel/FIS0018790
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: Administrator
+  password: eaehlnquxb
+}
+
+body:json {
+  {
+      "reasonId": 19,
+      "user": "John Johnes"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

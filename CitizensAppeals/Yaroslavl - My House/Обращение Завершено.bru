@@ -1,0 +1,29 @@
+meta {
+  name: Обращение Завершено
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api-admin.testmoydom.ru/v1/integration/incident-org/24912/finish
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+body:json {
+  {
+      "date_end": 1750840748,
+      "number": "Тест"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

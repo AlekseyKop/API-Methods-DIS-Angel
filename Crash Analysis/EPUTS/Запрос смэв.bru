@@ -1,0 +1,30 @@
+meta {
+  name: Запрос смэв
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://rnis66.ru/ords/r/eputs/dtp
+  body: text
+  auth: none
+}
+
+params:query {
+  ~token: 19350BB3-3359-0C2A-E063-2D0D000A886C
+}
+
+headers {
+  ~token: 19350BB3-3359-0C2A-E063-2D0D000A886C
+}
+
+body:text {
+  {
+  "token":"19350BB3-3359-0C2A-E063-2D0D000A886C"
+  ,"ttl":3600
+  }
+}
+
+settings {
+  encodeUrl: true
+}

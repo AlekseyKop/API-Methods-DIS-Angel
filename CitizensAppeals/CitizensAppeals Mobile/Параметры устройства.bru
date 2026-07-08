@@ -1,0 +1,27 @@
+meta {
+  name: Параметры устройства
+  type: http
+  seq: 19
+}
+
+post {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/deviceparameters
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer ee121f53-b14a-453e-aa4b-a151f6157c47
+}
+
+body:json {
+  {
+      "deviceId": "d0SahE0TRguhyxmnm_nPJG:APA91bG6A5f8uPXHZdImo2WvlP1W9c1oXCkLpno7_lyUHW4AybQ4txZF-AzJDGNxsqDaXWiiLWhr5Mg3jEFnbQl06xsLHgkPPgj1jHwQReCW08HVp_kMgWM",
+      "platform": "android"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

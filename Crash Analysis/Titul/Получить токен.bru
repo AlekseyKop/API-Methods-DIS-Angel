@@ -1,0 +1,22 @@
+meta {
+  name: Получить токен
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://46.160.151.214:10800/api/v1/data/users/login
+  body: text
+  auth: none
+}
+
+body:text {
+  {
+      "login":"angelit",
+      "password":"a1B6d7cf62D$7b4"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

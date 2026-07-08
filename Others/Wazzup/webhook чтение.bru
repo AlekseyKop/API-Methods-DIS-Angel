@@ -1,0 +1,31 @@
+meta {
+  name: webhook чтение
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.wazzup24.com/v3/webhooks
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 9a1e9ea10b7b48a2a60068b5f0503582
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "webhooksUri": "http://178.57.127.226/CitizensAppealsAPI/hs/wazzup/send",
+      "subscriptions": {
+          "messagesAndStatuses": true,
+          "contactsAndDealsCreation": true
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

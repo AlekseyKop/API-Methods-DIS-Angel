@@ -1,0 +1,24 @@
+meta {
+  name: Выход из аккаунта
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/profileBlocked
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 4e4b961f-c90c-4d97-8876-b86c0e259cbd
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

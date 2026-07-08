@@ -1,0 +1,29 @@
+meta {
+  name: Узнать по камерам устройства
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://dpath.vgserv.ru:5550/api/v1/data/complexes/cams
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: DQZNIQ2CHMJP62PRQDXNY5AFKAGWP3L2KEZDX76F3IMQ6M33ZASQ
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "complex_alias":"69ab475803099ee7bf2f7b1b",
+      "current_page":1,
+      "page_size":100
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

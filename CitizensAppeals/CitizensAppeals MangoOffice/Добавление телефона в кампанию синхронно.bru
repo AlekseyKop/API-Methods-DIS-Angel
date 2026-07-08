@@ -1,0 +1,22 @@
+meta {
+  name: Добавление телефона в кампанию синхронно
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://app.mango-office.ru/vpbx/task/add
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  vpbx_api_key: 9wk4u3qrxeoy0a514u67fnxb0clpx6cx
+  sign: b9867ddffafd76b8266341e0d9be57b2555b83415b27ee54f832d8809c69da4b
+  json: {"campaign_id": 1879234,"name": "Копытин Алексей","number": "+79304012945"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

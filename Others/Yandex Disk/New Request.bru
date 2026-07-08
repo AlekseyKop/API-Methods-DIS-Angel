@@ -1,0 +1,41 @@
+meta {
+  name: New Request
+  type: http
+  seq: 2
+}
+
+patch {
+  url: https://cloud-api.yandex.net/v1/disk/resources/public-settings?path=disk:/1534_1.mp4&allow_address_access=true
+  body: json
+  auth: inherit
+}
+
+params:query {
+  path: disk:/1534_1.mp4
+  allow_address_access: true
+}
+
+headers {
+  Authorization: OAuth y0__xDZj9rhBRjblgMgjqvoghQw6qax_Adh31nTGRnTsbO7_YGHdwRoIiLgRg
+}
+
+body:json {
+  {
+    //"available_until": 1737968946,
+    "accesses": [
+      {
+        "type": "macro",
+        "macros": [
+          "all"
+        ],
+        "rights": [
+          "read_without_download"
+        ]
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

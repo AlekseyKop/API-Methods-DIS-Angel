@@ -1,0 +1,30 @@
+meta {
+  name: Редирект на оператора
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://c1eds76ru.webim.ru/api/bot/v2/redirect_chat
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Token a33756d6ebfe3753bfe6dd4b137496b1-7cb8556b5d8b59fe9a9279db3cf198c9
+}
+
+body:json {
+  {
+    "operator_id":290445,
+    "chat_id":40
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

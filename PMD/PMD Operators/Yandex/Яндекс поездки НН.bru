@@ -1,0 +1,24 @@
+meta {
+  name: Яндекс поездки НН
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://scooters-data.yandex.net/mds/trips?end_time=2025-10-02T07
+  body: none
+  auth: inherit
+}
+
+params:query {
+  end_time: 2025-10-02T07
+}
+
+headers {
+  X-Api-Key: nizhnynovgorod:trygQdKyroaxTBkpMfWDofNFmPejeqYSrhtx
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

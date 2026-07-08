@@ -1,0 +1,24 @@
+meta {
+  name: Получение школ
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  data: '''
+    [out:json][timeout:180];
+    area[name="Воронежская область"];
+    nwr(area)[amenity=hospital];
+    out geom;
+  '''
+}
+
+settings {
+  encodeUrl: true
+}

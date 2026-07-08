@@ -1,0 +1,24 @@
+meta {
+  name: Список обращений v1
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://178.57.127.226/CitizensAppealsAPI/hs/api/v1/commands/appeals/list?start_date=2025-01-01&end_date=2026-01-01
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start_date: 2025-01-01
+  end_date: 2026-01-01
+}
+
+headers {
+  api-key: 4152f9fe-bbef-4093-a114-9044fcf7c827
+}
+
+settings {
+  encodeUrl: true
+}

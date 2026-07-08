@@ -1,0 +1,27 @@
+meta {
+  name: Авторизация
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://46.160.161.68:10800/api/v1/data/users/login
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: 419ab1a1-b798-4821-9c35-5c155a593777
+}
+
+body:json {
+  {
+      "login": "angelit",
+      "password": "a1B6d7cf62D$7b4"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

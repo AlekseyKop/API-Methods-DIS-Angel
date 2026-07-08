@@ -1,0 +1,29 @@
+meta {
+  name: Определение адм единицы
+  type: http
+  seq: 12
+}
+
+get {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/locate?lat=56.74975&long=38.86486
+  body: json
+  auth: inherit
+}
+
+params:query {
+  lat: 56.74975
+  long: 38.86486
+}
+
+headers {
+  authorization: Bearer c5b8032a-8bdd-4e34-bbc8-7745898c66b0
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

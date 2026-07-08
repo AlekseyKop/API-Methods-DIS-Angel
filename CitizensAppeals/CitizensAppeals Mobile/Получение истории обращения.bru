@@ -1,0 +1,28 @@
+meta {
+  name: Получение истории обращения
+  type: http
+  seq: 34
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/appeals/history?idAppeal=1207
+  body: json
+  auth: inherit
+}
+
+params:query {
+  idAppeal: 1207
+}
+
+headers {
+  authorization: Bearer be0bf8ba-50c1-458a-bdab-9e326248076e
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

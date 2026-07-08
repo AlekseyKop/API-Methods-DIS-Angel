@@ -1,0 +1,35 @@
+meta {
+  name: Создание контакта
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api.wazzup24.com/v3/contacts
+  body: text
+  auth: none
+}
+
+headers {
+  Authorization: Bearer 9a1e9ea10b7b48a2a60068b5f0503582
+}
+
+body:text {
+  
+          "id": "1",
+          "responsibleUserId": "1",
+          "name": "Test",
+          "contactData": [
+              {
+                  "chatType": "telegram",
+                  "phone": "89158420533"
+              }
+          ]
+   
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

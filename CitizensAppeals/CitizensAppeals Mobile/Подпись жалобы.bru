@@ -1,0 +1,30 @@
+meta {
+  name: Подпись жалобы
+  type: http
+  seq: 37
+}
+
+post {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/complaints/000000018/sign
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 88271510-9e97-418f-986e-9ecbda7dc563
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.1
+  appname: CitizensAppeals
+}
+
+body:json {
+  {
+      "code": "6289"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

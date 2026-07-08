@@ -1,0 +1,20 @@
+meta {
+  name: Список районов
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://178.57.127.226/CitizensAppealsAPI/hs/api/v1/commands/districts/list
+  body: none
+  auth: inherit
+}
+
+headers {
+  api-key: 4152f9fe-bbef-4093-a114-9044fcf7c827
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

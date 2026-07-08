@@ -1,0 +1,23 @@
+meta {
+  name: Список городов
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/cities
+  body: json
+  auth: inherit
+}
+
+headers {
+  ~mobileapp: true
+  ~devicetype: android
+  ~versionnumber: 1.0.0.1
+  ~appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

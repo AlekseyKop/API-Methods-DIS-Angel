@@ -1,0 +1,21 @@
+meta {
+  name: Причины отмены штрафа
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://10.101.40.21:8080/FIS/hs/api/commands/cancel/reasons
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: Administrator
+  password: eaehlnquxb
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

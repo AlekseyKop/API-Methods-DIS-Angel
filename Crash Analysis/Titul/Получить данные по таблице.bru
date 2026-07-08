@@ -1,0 +1,25 @@
+meta {
+  name: Получить данные по таблице
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://gis.titul2005.ru:1340/api/Titul/GeoData?table=road&token=88919e17c9a961594eddb03191a74a474df4cc49cf2ce0047fec132ad1b3b4ed
+  body: text
+  auth: none
+}
+
+params:query {
+  table: road
+  token: 88919e17c9a961594eddb03191a74a474df4cc49cf2ce0047fec132ad1b3b4ed
+}
+
+headers {
+  accept: application/octet-stream
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Яндекс события
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://scooters-data.yandex.net/mds/events?start_time=1748327594000&end_time=1748328194000
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start_time: 1748327594000
+  end_time: 1748328194000
+}
+
+headers {
+  X-Api-Key: nizhnynovgorod:trygQdKyroaxTBkpMfWDofNFmPejeqYSrhtx
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

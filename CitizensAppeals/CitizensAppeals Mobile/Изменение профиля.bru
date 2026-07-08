@@ -1,0 +1,35 @@
+meta {
+  name: Изменение профиля
+  type: http
+  seq: 13
+}
+
+put {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/profile
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 05da52cd-366e-40f7-9ce7-01b4f7ac155a
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.1
+  appname: CitizensAppeals
+}
+
+body:json {
+  {
+      "surname": "Фамилия",
+      "name": "Алексей",
+      "patronymic": "Отчество",
+      "phone": "71111111113",
+      "email": "aleksei@mail.ru",
+      "cityId": "000000011"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

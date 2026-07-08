@@ -1,0 +1,21 @@
+meta {
+  name: Подтверждение СМС Тест ЕСИА
+  type: http
+  seq: 21
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/confirmSMS?token=71111111111&code=6553
+  body: json
+  auth: inherit
+}
+
+params:query {
+  token: 71111111111
+  code: 6553
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: SunRent Треки
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://sunrent.bumerang.tech/api/v1/mds/trips?end_time=2025-05-06T17
+  body: none
+  auth: inherit
+}
+
+params:query {
+  end_time: 2025-05-06T17
+}
+
+headers {
+  x-api-key: e0XYluM73iGZZqg85guES53pW1dSvMjOIA9RM0GFED0OHRXpwdIKL4yU3sUdiCJpWi12uS5imT8SD98tFk9hhriGd1sQZ47WPII5YypCdt3goZINeZmhonWQhbfAvR5O
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

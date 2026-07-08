@@ -1,0 +1,26 @@
+meta {
+  name: Распознавание адреса
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mango/commands/recognize/address
+  body: json
+  auth: inherit
+}
+
+headers {
+  api-key: 7d03ff89-dd8a-467d-97ff-0264d1af04df
+}
+
+body:json {
+  {
+      "address": "Москва"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

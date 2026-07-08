@@ -1,0 +1,24 @@
+meta {
+  name: Ссылка для аутентификации через ЕСИА
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://c1.eds76.ru/CitizensAppealsAPITest/hs/mobile/esia/geturl
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer 9736fcd1-ef85-4703-94e4-d64bf4bd930f
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

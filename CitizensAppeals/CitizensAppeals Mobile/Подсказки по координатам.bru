@@ -1,0 +1,33 @@
+meta {
+  name: Подсказки по координатам
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/coordinatehints
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 0523f3ab-73c0-478c-98b3-8902f480dce5
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+  cityId: 000000009
+}
+
+body:json {
+  {
+      "lat": 57.634360,
+      "long": 39.836645,
+      "hintsCount": 5
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

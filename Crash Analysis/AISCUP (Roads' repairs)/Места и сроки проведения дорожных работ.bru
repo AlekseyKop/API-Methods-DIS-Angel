@@ -1,0 +1,21 @@
+meta {
+  name: Места и сроки проведения дорожных работ
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://aiscup.uadso.ru/ords/r/api/work_places
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "token": "26A07825-569C-6B2B-E063-1B1E10AC69D2"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

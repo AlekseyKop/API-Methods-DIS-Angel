@@ -1,0 +1,27 @@
+meta {
+  name: Распознавание ФИО
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost/CitizensAppealsAPI/hs/mango/commands/recognize/fullname
+  body: json
+  auth: inherit
+}
+
+headers {
+  api-key: 21728421-e499-4622-9429-83b660e3c689
+  X-Secret: 
+}
+
+body:json {
+  {
+      "fullname": "копытин иван романыч"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

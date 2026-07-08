@@ -1,0 +1,29 @@
+meta {
+  name: Загрузка файлов
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/download?section=appeals&name=picture
+  body: none
+  auth: inherit
+}
+
+params:query {
+  section: appeals
+  name: picture
+}
+
+headers {
+  ~authorization: Bearer d9ea6027-9f07-4504-a05b-812de8d23b73
+  ~mobileapp: true
+  ~devicetype: android
+  ~versionnumber: 1.0.0.1
+  ~appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

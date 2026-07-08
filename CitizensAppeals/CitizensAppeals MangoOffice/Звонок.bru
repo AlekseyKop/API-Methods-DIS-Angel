@@ -1,0 +1,33 @@
+meta {
+  name: Звонок
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://app.mango-office.ru/vpbx/commands/callback
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  ~vpbx-api: 
+}
+
+body:form-urlencoded {
+  vpbx_api_key: 9wk4u3qrxeoy0a514u67fnxb0clpx6cx
+  json: '''
+    {
+      "command_id": "cbk1",
+      "from": {
+        "extension": "12"
+      },
+      "to_number": "79304012945"
+    }
+  '''
+  sign: 51879117a49954de808f0d2b4f31d0394df7f31b1542cc4e390b4b5408792fff
+}
+
+settings {
+  encodeUrl: true
+}

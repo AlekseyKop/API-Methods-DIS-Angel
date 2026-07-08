@@ -1,0 +1,26 @@
+meta {
+  name: Список обращений v2
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://178.57.127.226/CitizensAppealsAPI/hs/api/v2/commands/appeals/list?start_date=2025-12-24&end_date=2025-12-24&district_id=000000014&organization_id=000000779
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start_date: 2025-12-24
+  end_date: 2025-12-24
+  district_id: 000000014
+  organization_id: 000000779
+}
+
+headers {
+  api-key: 4152f9fe-bbef-4093-a114-9044fcf7c827
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Запрос по устройствам
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://crash.uadso.ru:6677/CrashAnalysisAPI/hs/api/v1/commands/devices/list/DKS01330
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  api-key: 9eafb069-e6bb-4427-8c29-9b68b3db67a8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

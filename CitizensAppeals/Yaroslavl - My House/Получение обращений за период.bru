@@ -1,0 +1,28 @@
+meta {
+  name: Получение обращений за период
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api-admin.testmoydom.ru/v1/integration/problem-journal-org?somedayMine=true&dateUpdateFrom=1748398293&dateUpdateTo=1748398293
+  body: none
+  auth: apikey
+}
+
+params:query {
+  somedayMine: true
+  dateUpdateFrom: 1748398293
+  dateUpdateTo: 1748398293
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

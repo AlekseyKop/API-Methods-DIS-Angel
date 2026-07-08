@@ -1,0 +1,27 @@
+meta {
+  name: ОС заявки
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost/CitizensAppealsAPI/hs/mango/commands/appeals/feedback
+  body: json
+  auth: inherit
+}
+
+headers {
+  api-key: 21728421-e499-4622-9429-83b660e3c689
+}
+
+body:json {
+  {
+      "appealId2": "110",
+      "rating": 5
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

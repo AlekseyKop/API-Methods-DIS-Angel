@@ -1,0 +1,64 @@
+meta {
+  name: Запрос token
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://rnis66.ru//ords/r/eputs/token/auth
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  ~Host: 
+}
+
+body:multipart-form {
+  login: DTP@7
+  password: DTP
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: Запрос token
+  
+  request: {
+    url: https://rnis66.ru/ords/r/eputs/token/auth
+    method: POST
+    mode: multipartForm
+    body:multipart-form: {
+      login: DTP@7
+      password: DTP
+    }
+  }
+  
+  response: {
+    headers: {
+      Server: nginx
+      Date: Mon, 27 May 2024 11:17:48 GMT
+      Content-Type: text/html;charset=utf-8
+      Transfer-Encoding: chunked
+      Connection: keep-alive
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: html
+      content: '''
+        {
+        "token":"196EAAD0-6DC7-2ABA-E063-2D0D000ACA0E"
+        ,"ttl":3600
+        }
+        
+      '''
+    }
+  }
+}

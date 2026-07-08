@@ -1,0 +1,27 @@
+meta {
+  name: SunRent События
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://mds.whoosh.bike/events?start_time=1746532421000&end_time=1746536021000&pageSize=100&page=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  start_time: 1746532421000
+  end_time: 1746536021000
+  pageSize: 100
+  page: 0
+}
+
+headers {
+  x-api-key: 78MBE5uAyu1tiwIyYn6qOa1h2vmD866e9aCSYv0p
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

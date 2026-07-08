@@ -1,0 +1,28 @@
+meta {
+  name: Статистика
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://c1eds76ru.webim.ru/api/v4/stats?date=2026-04-23&mode=operators
+  body: none
+  auth: basic
+}
+
+params:query {
+  date: 2026-04-23
+  mode: operators
+}
+
+auth:basic {
+  username: shevchenkovv@angelsit.ru
+  password: 123QWEasd
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Проверка обновления
+  type: http
+  seq: 31
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/checkUpdate
+  body: none
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer df1d5f73-b057-4898-9221-93af64098dbf
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

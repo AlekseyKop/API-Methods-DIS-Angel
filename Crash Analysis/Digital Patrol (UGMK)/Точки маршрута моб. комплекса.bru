@@ -1,0 +1,27 @@
+meta {
+  name: Точки маршрута моб. комплекса
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://46.160.161.68:10800/api/v1/data/mobile/complexes/daily/route
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: 5f0b0d6d-18d9-4ccf-ba15-ccd8d6c6fb3d
+}
+
+body:json {
+  {
+      "serial": "PM3260",
+      "datetime": "2025-10-31"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

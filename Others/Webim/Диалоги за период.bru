@@ -1,0 +1,27 @@
+meta {
+  name: Диалоги за период
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://c1eds76ru.webim.ru/api/v4/chats?since=1778740661656054
+  body: none
+  auth: basic
+}
+
+params:query {
+  since: 1778740661656054
+}
+
+auth:basic {
+  username: shevchenkovv@angelsit.ru
+  password: 123QWEasd
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

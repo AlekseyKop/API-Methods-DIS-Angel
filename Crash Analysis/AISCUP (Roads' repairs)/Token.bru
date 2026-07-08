@@ -1,0 +1,22 @@
+meta {
+  name: Token
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://aiscup.uadso.ru/ords/r/api/token
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "login": "AZBUKA",
+      "password": "AZBUKA123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

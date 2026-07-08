@@ -1,0 +1,46 @@
+meta {
+  name: Создать обращение
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api-admin.testmoydom.ru/v1/integration/problem-journal-org
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: ArUXwUIZWrylDLXiV7r8juwxJoSZ
+  placement: header
+}
+
+body:json {
+  {
+      "source": "phone",
+      "description": "Тест",
+      "userFio": "Тест Тест Тест",
+      "userPhone": "9000000000",
+      "houseFiasId": "49cb0e9d-8fbe-417d-b43d-ee51dcac1274",
+      "group": "97e7c671-a0cf-4c79-b15c-dbb00c7afa7b",
+      "type": "8ba07b8d-2576-4b10-9b5d-84c5291f074c",
+      "emergency": false,
+      "system": "rso",
+      "executor": "13",
+      "files": [
+          {
+              "link": "/storage/pj/zwhjagv4/1748418987.png",
+              "name": "Frame 44 (1).png",
+              "size": 52045,
+              "type": "image/png",
+              "ext": "png",
+              "md5": "2aa63d21b2440350ded7f7aa1c30fc1c"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

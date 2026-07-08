@@ -1,0 +1,24 @@
+meta {
+  name: Отзыв подписи жалобы
+  type: http
+  seq: 15
+}
+
+get {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/complaints/000000002/unsign
+  body: none
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 3419800d-2246-45db-bdc1-5c7c467771b5
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

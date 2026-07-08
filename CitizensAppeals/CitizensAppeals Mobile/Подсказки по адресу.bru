@@ -1,0 +1,32 @@
+meta {
+  name: Подсказки по адресу
+  type: http
+  seq: 33
+}
+
+post {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/addresshints
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 99ff663a-ec9e-43d9-86ec-1c0b0be2794c
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+  cityId: 000000011
+}
+
+body:json {
+  {
+      "address": "улица челюскинцев",
+      "hintsCount": 5
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

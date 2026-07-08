@@ -1,0 +1,37 @@
+meta {
+  name: Новое обращение стороннее
+  type: http
+  seq: 17
+}
+
+post {
+  url: http://178.57.127.226/CitizensAppealsAPI/hs/mobile/appeals/new
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer 503ac904-f12b-4784-806d-14fba95fc1f3
+  ~mobileapp: true
+  ~devicetype: android
+  ~versionnumber: 1.0.0.1
+  ~appname: CitizensAppeals
+}
+
+body:json {
+  {
+    "fullname": "Никита Морозов",
+    "phone": "89807486720",
+    "address": "Ярославль, Чехова, д 2, кв 1",
+    "residentialAddress": "Ярославль, Чехова, д 2, кв 1",
+    "violation_id": "00000617",
+    "description": "Проверка отправки - скоро удалю",
+    "flat": "1",
+    "files": []
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

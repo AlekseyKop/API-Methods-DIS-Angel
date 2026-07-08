@@ -1,0 +1,21 @@
+meta {
+  name: Регистрация аккаунта
+  type: http
+  seq: 36
+}
+
+post {
+  url: http://communal.azbykait.ru:4455/CitizensAppealsAPITest/hs/mobile/confirmsmscode?token=356b50be448b451b8342c72fa6815bc7&code=2533
+  body: json
+  auth: inherit
+}
+
+params:query {
+  token: 356b50be448b451b8342c72fa6815bc7
+  code: 2533
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

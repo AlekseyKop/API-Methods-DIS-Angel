@@ -1,0 +1,44 @@
+meta {
+  name: Метод действий
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://c1eds76ru.webim.ru/l/ch
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:basic {
+  username: shevchenkovv@angelsit.ru
+  password: 123QWEasd
+}
+
+body:json {
+  {
+    "from": {
+      "id": "c906c924-0727-47e8-8dd0-864f00a24eb6",
+      "fields": {
+        "id": "c906c924-0727-47e8-8dd0-864f00a24eb6",
+        "display_name": "Евгений",
+        "phone": "+78121112233",
+        "email": "support@webim.ru"
+      }
+    },
+    "text": "Здравствуйте, чем я могу Вам помочь?",
+    "secret": "960c1a9d118a4b86b2e004c9c12c4150",
+    "channel_id": "7638afa6453d45d5b8318d9274880923"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

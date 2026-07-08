@@ -1,0 +1,26 @@
+meta {
+  name: Поверка комплекса ФВФ
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://46.160.151.214:10800/api/v1/data/complexes/verification
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: 419ab1a1-b798-4821-9c35-5c155a593777
+}
+
+body:json {
+  {
+      "complex_alias": "b7e91e2b-1433-490b-9390-d1b571c462f5"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

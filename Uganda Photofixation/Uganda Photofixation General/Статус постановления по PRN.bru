@@ -1,0 +1,20 @@
+meta {
+  name: Статус постановления по PRN
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://10.101.40.21:8080/FIS/hs/api/commands/fines-statuses/2250006843327
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: Administrator
+  password: eaehlnquxb
+}
+
+settings {
+  encodeUrl: true
+}

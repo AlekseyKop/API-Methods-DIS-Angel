@@ -1,0 +1,24 @@
+meta {
+  name: Удаление аккаунта
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost/CitizensAppealsAPI/hs/mobile/profile
+  body: none
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer bd2ce375-d761-4bba-ba4e-a42552b1e2a2
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

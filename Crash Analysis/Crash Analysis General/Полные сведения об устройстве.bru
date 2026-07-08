@@ -1,0 +1,139 @@
+meta {
+  name: Полные сведения об устройстве
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost/InfoBase2/hs/api/v1/commands/road-passport/list/260248
+  body: none
+  auth: basic
+}
+
+headers {
+  api-key: a06710ba-b703-4459-a9af-c54e55736a09
+}
+
+auth:basic {
+  username: TestAPI
+  password: 123
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: New Request
+  
+  request: {
+    url: http://localhost/InfoBase/hs/api/v1/commands/devices/list/AV_018-119?start_date=2024-09-17&end_date=2024-10-01
+    method: GET
+    mode: none
+    params:query: {
+      start_date: 2024-09-17
+      end_date: 2024-10-01
+    }
+  
+    headers: {
+      api-key: a06710ba-b703-4459-a9af-c54e55736a09
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Mon, 30 Sep 2024 13:45:44 GMT
+      Server: Apache/2.4.58 (Win32)
+      charset: utf-8
+      Content-Length: 1639
+      Keep-Alive: timeout=5, max=100
+      Connection: Keep-Alive
+      Content-Type: application/json
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "device_info": {
+                "subclass": "",
+                "serial": "AV_018-119",
+                "comment": "",
+                "manufacture_date": "",
+                "starting_date": "",
+                "owner": "",
+                "status": "",
+                "smr_price": 0,
+                "servorg": "",
+                "complex_producer": "",
+                "complex_country": "",
+                "cams_count": 0,
+                "demontage_year": 0,
+                "demontage_reason": "",
+                "commissioning_info": "",
+                "commissioning_date": "",
+                "commissioning_status": "",
+                "model": "Автодория 3.5",
+                "class": "Мобильный",
+                "verification_number": "",
+                "verification_end_date": "",
+                "measurements_number": "",
+                "measurements_start_date": "",
+                "measurements_end_date": "",
+                "location": "А - 217 Приморское полукольцо, Калининград - Светлогорск, 9 км 308 м, Калининградская обл.",
+                "location_cat": "А",
+                "oktmo": "ОКТМО",
+                "speed_limit": "AV_018-119",
+                "bkd": 2023,
+                "distance_523": "1233",
+                "shared_zones": "Есть",
+                "complex_distance": "23",
+                "control_zone_width": 12,
+                "control_zone_length": 23,
+                "control_zone_lanes": 31,
+                "direction": "вап",
+                "latitude": 54.78225,
+                "longitude": 20.54523,
+                "flow": [
+                    {
+                        "date": "2024-09-28",
+                        "count": 41
+                    },
+                    {
+                        "date": "2024-09-29",
+                        "count": 15
+                    },
+                    {
+                        "date": "2024-09-30",
+                        "count": 20
+                    }
+                ],
+                "offenses": [
+                    {
+                        "date": "2024-09-28",
+                        "offense_name": "Выезд на трамвайные пути встречного направления",
+                        "count": 5
+                    },
+                    {
+                        "date": "2024-09-29",
+                        "offense_name": "Другие нарушения ПДД водителем",
+                        "count": 1
+                    },
+                    {
+                        "date": "2024-09-30",
+                        "offense_name": "Иные нарушения",
+                        "count": 4
+                    }
+                ],
+                "can_fix": []
+            }
+        }
+      '''
+    }
+  }
+}

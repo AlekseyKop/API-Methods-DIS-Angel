@@ -1,0 +1,24 @@
+meta {
+  name: Получение видов заявок
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://185.40.77.81:4455/CitizensAppealsAPITest/hs/mobile/getViolations
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer bd068515-213a-46c3-b95c-53562d38bbcb
+  mobileapp: true
+  devicetype: android
+  versionnumber: 1.0.0.1
+  appname: CitizensAppeals
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
