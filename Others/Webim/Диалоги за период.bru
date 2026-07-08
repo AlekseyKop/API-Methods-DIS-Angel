@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: https://c1eds76ru.webim.ru/api/v4/chats?since=1778740661656054
+  url: https://c1eds76ru.webim.ru/api/v4/chats?since=1783521036009437
   body: none
   auth: basic
 }
 
 params:query {
-  since: 1778740661656054
+  since: 1783521036009437
 }
 
 auth:basic {
@@ -24,4 +24,197 @@ settings {
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://c1eds76ru.webim.ru/api/v4/chats?since=1783521036009437
+    method: GET
+    mode: none
+    params:query: {
+      since: 1783521036009437
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Wed, 08 Jul 2026 15:36:46 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      etag: W/"0f850ca6416cef84ad78657eb626e2a52eeb1324"
+      x-prt: 8260
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "more_chats_available": false,
+          "last_ts": 1783523695442213,
+          "chats": [
+            {
+              "created_at": "2026-07-08T13:30:06Z",
+              "id": 221,
+              "operator_id": 290763,
+              "operator_comment": null,
+              "rates": null,
+              "state_history": [
+                {
+                  "state": "queue",
+                  "department_id": null,
+                  "operator_id": null,
+                  "at": "2026-07-08T13:30:06Z"
+                },
+                {
+                  "state": "chatting_with_robot",
+                  "department_id": null,
+                  "operator_id": 290763,
+                  "at": "2026-07-08T13:30:06Z"
+                },
+                {
+                  "state": "closed_by_operator",
+                  "department_id": null,
+                  "operator_id": 290763,
+                  "at": "2026-07-08T13:30:24Z"
+                },
+                {
+                  "state": "closed",
+                  "department_id": null,
+                  "operator_id": 290763,
+                  "at": "2026-07-08T14:30:30Z"
+                }
+              ],
+              "visitor": {
+                "id": "c227a826ab12ea2675e39114de70cd3c",
+                "fields": {
+                  "id": "799999999997888",
+                  "name": "Ельцын Борис",
+                  "email": "borya@kremlin.ru",
+                  "phone": "+79999999999"
+                }
+              },
+              "visit_session": {
+                "ip": "92.241.13.40",
+                "landing_page": null
+              },
+              "start_page": null,
+              "messages": [
+                {
+                  "created_at": "2026-07-08T13:30:06Z",
+                  "kind": "for_operator",
+                  "id": "bed476b9c3184e93bbb79dc13f9f4336",
+                  "message": "Посетитель открыл окно диалога со страницы Android Client\nМестоположение: Орёл https://maps.google.com/maps?q=52.96508,36.0785\nБраузер: Android 12\nIP: https://www.nic.ru/whois/?query=92.241.13.40\nID: 799999999997888\nИмя: Ельцын Борис\nЭлектронная почта: borya@kremlin.ru\nТелефон: +79999999999"
+                },
+                {
+                  "created_at": "2026-07-08T13:30:06Z",
+                  "kind": "info",
+                  "id": "c7b6ab63179948d8a4a549f0fc5aaf25",
+                  "message": "Оператор ЖКХ ЕДС ЯО включился в разговор"
+                },
+                {
+                  "created_at": "2026-07-08T13:30:06Z",
+                  "kind": "for_operator",
+                  "id": "20d44633f91d469198cfcf123d6a8436",
+                  "message": "Посетитель переведён в статус онлайн."
+                },
+                {
+                  "created_at": "2026-07-08T13:30:13Z",
+                  "kind": "visitor",
+                  "id": "37fc96a5159f416db8a08ca7040e5c23",
+                  "message": "Привет страна"
+                },
+                {
+                  "created_at": "2026-07-08T13:30:25Z",
+                  "kind": "info",
+                  "id": "5fbc02fe34774c3d9eaf86a491e4e57c",
+                  "message": "Оператор ЖКХ ЕДС ЯО закрыл диалог"
+                },
+                {
+                  "created_at": "2026-07-08T13:52:59Z",
+                  "kind": "for_operator",
+                  "id": "15642ebe076445fca80979fcae1f01af",
+                  "message": "Посетитель переведён в статус офлайн."
+                },
+                {
+                  "created_at": "2026-07-08T14:29:31Z",
+                  "kind": "info",
+                  "id": "e294876fe49f4d7d966c5e519dcc3033",
+                  "message": "В случае дальнейшего бездействия диалог будет закрыт"
+                }
+              ],
+              "category_ids": []
+            },
+            {
+              "created_at": "2026-07-08T15:14:54Z",
+              "id": 224,
+              "operator_id": 290763,
+              "operator_comment": null,
+              "rates": null,
+              "state_history": [
+                {
+                  "state": "queue",
+                  "department_id": null,
+                  "operator_id": null,
+                  "at": "2026-07-08T15:14:54Z"
+                },
+                {
+                  "state": "chatting_with_robot",
+                  "department_id": null,
+                  "operator_id": 290763,
+                  "at": "2026-07-08T15:14:54Z"
+                }
+              ],
+              "visitor": {
+                "id": "1fe8011eb2af20b916b5fea724c4e059",
+                "fields": {
+                  "id": "79565656562",
+                  "name": "Роналду Криштиану",
+                  "email": "trfveet@mail.ru",
+                  "phone": "+79565656562"
+                }
+              },
+              "visit_session": {
+                "ip": "92.241.13.40",
+                "landing_page": null
+              },
+              "start_page": null,
+              "messages": [
+                {
+                  "created_at": "2026-07-08T15:14:54Z",
+                  "kind": "for_operator",
+                  "id": "18b6ae771a4845dcb6eaa615a84c72c0",
+                  "message": "Посетитель открыл окно диалога со страницы Android Client\nМестоположение: Орёл https://maps.google.com/maps?q=52.96508,36.0785\nБраузер: Android 12\nIP: https://www.nic.ru/whois/?query=92.241.13.40\nID: 79565656562\nИмя: Роналду Криштиану\nЭлектронная почта: trfveet@mail.ru\nТелефон: +79565656562"
+                },
+                {
+                  "created_at": "2026-07-08T15:14:54Z",
+                  "kind": "info",
+                  "id": "133d8afe48164600b657eaeddff1e639",
+                  "message": "Оператор ЖКХ ЕДС ЯО включился в разговор"
+                },
+                {
+                  "created_at": "2026-07-08T15:14:54Z",
+                  "kind": "for_operator",
+                  "id": "214408262245431f914e58b7e09fb5e4",
+                  "message": "Посетитель переведён в статус онлайн."
+                }
+              ],
+              "category_ids": []
+            }
+          ]
+        }
+      '''
+    }
+  }
 }
