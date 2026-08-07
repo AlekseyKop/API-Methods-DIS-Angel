@@ -1,0 +1,91 @@
+meta {
+  name: Входящий звонок
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api3.greensms.ru/call/send
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+body:json {
+  to=792612345678
+}
+
+body:text {
+  to=79304012945
+}
+
+body:form-urlencoded {
+  to: 79304012945
+}
+
+body:multipart-form {
+  to: 79304012945
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/call/send
+    method: POST
+    mode: formUrlEncoded
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  
+    body:json: {
+      to=792612345678
+    }
+  
+    body:text: {
+      to=79304012945
+    }
+  
+    body:form-urlencoded: {
+      to: 79304012945
+    }
+  
+    body:multipart-form: {
+      to: 79304012945
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 13:24:14 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 67
+      etag: W/"43-H30AKQRmW2NMKbw/FKuyyD/FVPU"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "request_id": "d7855c1b-5a0d-4a7c-8fa8-53b1266d1612",
+          "code": "5329"
+        }
+      '''
+    }
+  }
+}

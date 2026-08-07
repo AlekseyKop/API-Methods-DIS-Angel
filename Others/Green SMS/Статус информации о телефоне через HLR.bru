@@ -1,0 +1,77 @@
+meta {
+  name: Статус информации о телефоне через HLR
+  type: http
+  seq: 11
+}
+
+get {
+  url: https://api3.greensms.ru/hlr/status?id=f9891588-904f-411b-8d09-72525d293c7b&to=79304012945&user=angelsit_dis&pass=Hzgjkjd1488
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: f9891588-904f-411b-8d09-72525d293c7b
+  to: 79304012945
+  user: angelsit_dis
+  pass: Hzgjkjd1488
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/hlr/status?id=f9891588-904f-411b-8d09-72525d293c7b&to=79304012945&user=angelsit_dis&pass=Hzgjkjd1488
+    method: GET
+    mode: none
+    params:query: {
+      id: f9891588-904f-411b-8d09-72525d293c7b
+      to: 79304012945
+      user: angelsit_dis
+      pass: Hzgjkjd1488
+    }
+  
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 14:12:06 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 69
+      etag: W/"45-LvCCRb659L8UlWy0F9sB/JImBfI"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "status": 1,
+          "flag": 4,
+          "mcc": "250",
+          "mnc": "20",
+          "cn": "Russia",
+          "net": "T2"
+        }
+      '''
+    }
+  }
+}

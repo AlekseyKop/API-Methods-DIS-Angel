@@ -1,0 +1,70 @@
+meta {
+  name: Голосовое сообщение (Входящий звонок)
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://api3.greensms.ru/voice/send
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+body:form-urlencoded {
+  to: 79304012945
+  txt: 4567
+  lang: ru
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/voice/send
+    method: POST
+    mode: formUrlEncoded
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  
+    body:form-urlencoded: {
+      to: 79304012945
+      txt: 4567
+      lang: ru
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 13:40:18 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 53
+      etag: W/"35-hPLvYmqXviPF8Vf5mnb67bsh/zU"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "request_id": "7abd0276-2f39-4cd8-9a62-28e9c14c6240"
+        }
+      '''
+    }
+  }
+}

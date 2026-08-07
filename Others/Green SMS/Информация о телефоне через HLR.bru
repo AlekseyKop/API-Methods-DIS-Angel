@@ -1,0 +1,70 @@
+meta {
+  name: Информация о телефоне через HLR
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://api3.greensms.ru/hlr/send
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+body:form-urlencoded {
+  to: 79304012945
+  user: angelsit_dis
+  pass: Hzgjkjd1488
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/hlr/send
+    method: POST
+    mode: formUrlEncoded
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  
+    body:form-urlencoded: {
+      to: 79304012945
+      user: angelsit_dis
+      pass: Hzgjkjd1488
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 14:09:33 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 53
+      etag: W/"35-ZsXlxC8kLdvVG088dxo/iKkxRhw"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "request_id": "f9891588-904f-411b-8d09-72525d293c7b"
+        }
+      '''
+    }
+  }
+}

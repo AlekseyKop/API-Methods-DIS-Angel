@@ -1,0 +1,118 @@
+meta {
+  name: Статус исходящего звонка
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api3.greensms.ru/call/status?user=angelsit_dis&pass=Hzgjkjd1488&id=abf78a01-4eab-4718-9d21-95751e54c87c
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user: angelsit_dis
+  pass: Hzgjkjd1488
+  id: abf78a01-4eab-4718-9d21-95751e54c87c
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example1
+  
+  request: {
+    url: https://api3.greensms.ru/call/status?user=angelsit_dis&pass=Hzgjkjd1488&id=abf78a01-4eab-4718-9d21-95751e54c87c
+    method: GET
+    mode: none
+    params:query: {
+      user: angelsit_dis
+      pass: Hzgjkjd1488
+      id: abf78a01-4eab-4718-9d21-95751e54c87c
+    }
+  
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 13:33:38 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 84
+      etag: W/"54-aTinTIq1p3o3gqCg9Od91s6JTHQ"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "time": "2026-08-07T13:31:26.000Z",
+          "status_code": 8,
+          "status": "Accepted for delivery"
+        }
+      '''
+    }
+  }
+}
+
+example {
+  name: example2
+  
+  request: {
+    url: https://api3.greensms.ru/call/status?user=angelsit_dis&pass=Hzgjkjd1488&id=abf78a01-4eab-4718-9d21-95751e54c87c
+    method: GET
+    mode: none
+    params:query: {
+      user: angelsit_dis
+      pass: Hzgjkjd1488
+      id: abf78a01-4eab-4718-9d21-95751e54c87c
+    }
+  
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 13:34:29 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 75
+      etag: W/"4b-ipjTEys3YboKX7/C9pqhLeJGNuU"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "time": "2026-08-07T13:34:20.000Z",
+          "status_code": 1,
+          "status": "Call success"
+        }
+      '''
+    }
+  }
+}

@@ -1,0 +1,70 @@
+meta {
+  name: Отправка сообщения VK
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://api3.greensms.ru/vk/send
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+body:form-urlencoded {
+  to: 79304012945
+  txt: 4567
+  from: ЕДС ЖКХ
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/vk/send
+    method: POST
+    mode: formUrlEncoded
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  
+    body:form-urlencoded: {
+      to: 79304012945
+      txt: 4567
+      from: ЕДС ЖКХ
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 13:51:49 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 53
+      etag: W/"35-eaubO1Xjzlz1javMNjTSb4jONPY"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "request_id": "92f9f6cc-aaec-424e-af54-55953455bb6d"
+        }
+      '''
+    }
+  }
+}

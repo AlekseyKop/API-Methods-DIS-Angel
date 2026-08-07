@@ -1,0 +1,68 @@
+meta {
+  name: Статус аутентификации через SIMPush
+  type: http
+  seq: 9
+}
+
+get {
+  url: https://api3.greensms.ru/simpush/status?id=c101425b-e012-4e98-87ce-a0276704b924
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: c101425b-e012-4e98-87ce-a0276704b924
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+example {
+  name: example
+  
+  request: {
+    url: https://api3.greensms.ru/simpush/status?id=c101425b-e012-4e98-87ce-a0276704b924
+    method: GET
+    mode: none
+    params:query: {
+      id: c101425b-e012-4e98-87ce-a0276704b924
+    }
+  
+    headers: {
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYW5nZWxzaXRfZGlzIiwiaWF0IjoxNzg2MTA4OTQ0LCJpc3MiOiJhcGkuZ3JlZW5zbXMucnUifQ.yfKUm-lbapq6CTBlI8n1TRuQlVHH1wa0vFw5P6G_xn8
+    }
+  }
+  
+  response: {
+    headers: {
+      server: nginx
+      date: Fri, 07 Aug 2026 14:03:27 GMT
+      content-type: application/json; charset=utf-8
+      content-length: 80
+      etag: W/"50-yn2GzvpbCxQItjGXn7evSPt9mqw"
+      connection: close
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "time": "2026-08-07T13:59:56.000Z",
+          "status_code": 34,
+          "status": "Delivery expired"
+        }
+      '''
+    }
+  }
+}
