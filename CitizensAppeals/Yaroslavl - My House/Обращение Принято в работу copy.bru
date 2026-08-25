@@ -1,0 +1,28 @@
+meta {
+  name: Обращение Принято в работу copy
+  type: http
+  seq: 16
+}
+
+post {
+  url: https://api-admin.moydom-yaroslavl.ru/v1/integration/problem-journal-org/343196/reopen
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-AUTH-TOKEN-ORG
+  value: 41c1e59f1b51cc5b55ff5ce6fc94aeb4
+  placement: header
+}
+
+body:json {
+  {
+      "systemComment": "test"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
