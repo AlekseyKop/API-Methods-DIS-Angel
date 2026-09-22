@@ -1,0 +1,87 @@
+meta {
+  name: Поездка через шлагбаум (Камера)
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://62.133.172.53:8080/snowTickets/hs/exchange/visit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": "3bab4ded-50ef-49a9-bd08-10ab885218f1",
+    "method": "visit",
+    "data": {
+      "photo": "Фото",
+      "camera_id": "IN",
+      "datetime": "2026-09-16T11:55:08.033926",
+      "grz": "",
+      "number": "",
+      "open_result": "12",
+      "opened": true,
+      "timestamp": 1789557608.033909,
+      "button_pressed": true
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  forwardAuthorizationHeader: false
+}
+
+example {
+  name: example
+  
+  request: {
+    url: http://62.133.172.53:8080/snowTickets/hs/exchange/visit
+    method: POST
+    mode: json
+    body:json: {
+      {
+        "id": "3bab4ded-50ef-49a9-bd08-10ab885218f1",
+        "method": "visit",
+        "data": {
+          "photo": "Фото",
+          "camera_id": "IN",
+          "datetime": "2026-09-16T11:55:08.033926",
+          "grz": "",
+          "number": "",
+          "open_result": "12",
+          "opened": true,
+          "timestamp": 1789557608.033909,
+          "button_pressed": true
+        }
+      }
+    }
+  }
+  
+  response: {
+    headers: {
+      date: Thu, 17 Sep 2026 08:27:34 GMT
+      server: Apache/2.4.67 (Win64)
+      content-length: 18
+      keep-alive: timeout=5, max=100
+      connection: Keep-Alive
+      content-type: application/json; charset=utf-8
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "result": {}
+        }
+      '''
+    }
+  }
+}
